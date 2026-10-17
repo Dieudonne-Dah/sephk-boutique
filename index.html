@@ -1,0 +1,1264 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Seph'K, chemises, tuniques et ensembles homme cousus à Abidjan. Commandez en ligne, livraison en 24 h à Abidjan, paiement Wave, Orange Money, MTN MoMo, Moov Money.">
+<meta property="og:title" content="Seph'K Boutique">
+<meta property="og:description" content="Chemises et ensembles homme cousus à Abidjan. Commande sur WhatsApp, livraison 24 h.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Seph'K Boutique</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap">
+<style>
+/* Layout: lookbook boutique, white paper ground and ink type taken from the logo; one black band carries the signature pockets */
+:root {
+  --paper: #FFFFFF;
+  --stone: #F4F2EE;
+  --ink: #141414;
+  --graphite: #5B5852;
+  --hairline: #E3DFD7;
+  --whatsapp: #0F6E3A;
+  --on-whatsapp: #FFFFFF;
+  --alert: #9E2A1E;
+  --scrim: rgba(20, 20, 20, 0.48);
+  --on-ink-muted: #C9C5BD;
+  --font-display: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'DM Mono', ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px);
+  z-index: 10;
+  background: var(--paper);
+}
+* { box-sizing: border-box; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 300; text-wrap: balance; margin: 0; }
+p { margin: 0; }
+
+.wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+@media (min-width: 720px) {
+  .wrap {
+    padding-left: max(32px, env(safe-area-inset-left, 0px));
+    padding-right: max(32px, env(safe-area-inset-right, 0px));
+  }
+}
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--graphite);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+.btn-ink { background: var(--ink); color: var(--paper); }
+.btn-ink:hover { background: var(--graphite); }
+.btn-line { border-color: var(--ink); background: transparent; color: var(--ink); }
+.btn-line:hover { background: var(--ink); color: var(--paper); }
+.btn-wa { background: var(--whatsapp); color: var(--on-whatsapp); }
+.btn-wa:hover { background: var(--ink); }
+.btn-text {
+  background: none;
+  border: 0;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.icon { width: 20px; height: 20px; flex: 0 0 auto; }
+
+/* Top strip and header */
+.strip { background: var(--ink); color: var(--paper); font-size: 13px; }
+.strip .wrap {
+  padding-block: 9px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 28px;
+}
+.site-head {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 30;
+  background: var(--paper);
+  border-bottom: 1px solid var(--hairline);
+}
+.head-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-block: 8px;
+}
+.brand { display: flex; align-items: center; text-decoration: none; }
+.brand img { width: 62px; height: auto; }
+.head-nav { display: none; gap: 28px; margin-left: auto; font-size: 14px; font-weight: 500; }
+.head-nav a { text-decoration: none; padding: 10px 0; }
+.head-nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.cart-btn {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 0 16px;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  background: var(--paper);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cart-count {
+  min-width: 24px;
+  height: 24px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 900px) {
+  .head-nav { display: flex; }
+  .cart-btn { margin-left: 12px; }
+}
+
+/* Hero */
+.hero .wrap {
+  padding-block: 48px 64px;
+  display: grid;
+  gap: 40px;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .hero .wrap { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 56px; padding-block: 72px 88px; }
+}
+.hero-copy { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.hero h1 {
+  font-size: clamp(40px, 6.2vw, 78px);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+.hero h1 em { font-style: italic; }
+.lead { font-size: 18px; line-height: 1.6; color: var(--graphite); max-width: 34em; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 36px;
+  margin: 8px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--hairline);
+}
+.facts div { display: flex; flex-direction: column; gap: 2px; }
+.facts dt { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--graphite); }
+.facts dd { margin: 0; font-size: 20px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.looks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  align-items: start;
+}
+.look { margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.look img { width: 100%; aspect-ratio: 3 / 5; object-fit: cover; background: var(--stone); }
+.look:nth-child(2) { margin-top: 48px; }
+.look:nth-child(3) { margin-top: 18px; }
+.look figcaption { font-family: var(--font-mono); font-size: 12px; color: var(--graphite); letter-spacing: 0.08em; }
+
+/* Collection */
+.collection .wrap { padding-block: 24px 88px; display: flex; flex-direction: column; gap: 28px; }
+.section-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px; }
+.section-head h2, .section-title { font-size: clamp(32px, 4vw, 44px); letter-spacing: -0.015em; line-height: 1.1; }
+.title-block { display: flex; flex-direction: column; gap: 8px; }
+.tools { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  min-height: 42px;
+  padding: 0 16px;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  background: var(--paper);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.chip .n { font-family: var(--font-mono); font-size: 12px; color: var(--graphite); }
+.chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.chip[aria-pressed="true"] .n { color: var(--on-ink-muted); }
+.sort { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--graphite); }
+.sort select {
+  min-height: 42px;
+  padding: 0 12px;
+  border: 1px solid var(--hairline);
+  border-radius: 2px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 14px;
+}
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 14px; }
+@media (min-width: 720px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 20px; } }
+@media (min-width: 1040px) { .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 44px 24px; } }
+.card-hit {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.card-media { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--stone); margin-bottom: 6px; }
+.card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.card-hit:hover .card-media img { transform: scale(1.035); }
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+}
+.card-ref { font-family: var(--font-mono); font-size: 12px; color: var(--graphite); letter-spacing: 0.08em; }
+.card-name { font-size: 15px; font-weight: 500; line-height: 1.35; }
+.card-price { font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.card-cta { font-size: 13px; color: var(--graphite); text-decoration: underline; text-underline-offset: 3px; }
+.empty {
+  background: var(--stone);
+  padding: 40px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 720px;
+}
+.empty h3 { font-size: 26px; }
+.empty p { color: var(--graphite); max-width: 36em; }
+
+/* Signature band */
+.signature { background: var(--ink); color: var(--paper); }
+.signature .wrap { padding-block: 72px; display: grid; gap: 40px; align-items: center; }
+@media (min-width: 900px) { .signature .wrap { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 64px; padding-block: 96px; } }
+.sig-copy { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+.sig-copy .eyebrow { color: var(--on-ink-muted); }
+.sig-copy h2 { font-size: clamp(34px, 4.4vw, 54px); line-height: 1.05; letter-spacing: -0.02em; }
+.sig-copy p { color: var(--on-ink-muted); font-size: 17px; max-width: 30em; }
+.tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.tile { margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.tile img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.tile button {
+  align-self: flex-start;
+  background: none;
+  border: 0;
+  padding: 4px 0;
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Made to measure */
+.made .wrap { padding-block: 80px; display: flex; flex-direction: column; gap: 36px; }
+.made { background: var(--stone); }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+@media (min-width: 820px) { .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.step { background: var(--paper); padding: 28px; display: flex; flex-direction: column; gap: 10px; }
+.step-n { font-family: var(--font-mono); font-size: 13px; color: var(--graphite); }
+.step h3 { font-size: 22px; font-weight: 400; }
+.step p { color: var(--graphite); font-size: 15px; }
+
+/* Delivery */
+.delivery .wrap { padding-block: 80px; display: grid; gap: 40px; }
+@media (min-width: 900px) { .delivery .wrap { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 64px; } }
+.zone-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.zone-table th, .zone-table td { text-align: left; padding: 14px 0; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+.zone-table th { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--graphite); font-weight: 400; }
+.zone-table td:last-child, .zone-table th:last-child { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.zone-table .sub { display: block; font-size: 13px; color: var(--graphite); }
+.table-box { overflow-x: auto; }
+.pay-block { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+.pay-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+.pay-list li { border: 1px solid var(--hairline); padding: 8px 14px; font-size: 14px; font-weight: 500; }
+.pay-block p { color: var(--graphite); font-size: 15px; }
+
+/* Footer */
+.foot { background: var(--ink); color: var(--paper); }
+.foot .wrap { padding-block: 56px 32px; display: flex; flex-direction: column; gap: 36px; }
+.foot-row { display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: flex-start; justify-content: space-between; }
+.foot-brand { display: flex; flex-direction: column; gap: 14px; max-width: 320px; }
+.foot-brand img { width: 84px; filter: invert(1); }
+.foot-brand p { color: var(--on-ink-muted); font-size: 14px; }
+.foot-contact { display: flex; flex-direction: column; gap: 12px; }
+.foot-contact .eyebrow { color: var(--on-ink-muted); }
+.phone-line { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.phone { font-size: 24px; font-weight: 300; letter-spacing: 0.02em; user-select: all; font-variant-numeric: tabular-nums; }
+.copy-btn {
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--on-ink-muted);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--paper);
+  font-size: 13px;
+  cursor: pointer;
+}
+.foot-legal { border-top: 1px solid var(--graphite); padding-top: 20px; font-size: 13px; color: var(--on-ink-muted); }
+
+/* Floating WhatsApp button */
+.wa-float {
+  position: fixed;
+  right: calc(16px + env(safe-area-inset-right, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 20px;
+  border-radius: 999px;
+  background: var(--whatsapp);
+  color: var(--on-whatsapp);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(20, 20, 20, 0.22);
+}
+
+/* Overlays */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: var(--scrim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(12px + env(safe-area-inset-top, 0px)) calc(12px + env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) calc(12px + env(safe-area-inset-left, 0px));
+}
+.sheet {
+  position: relative;
+  width: min(1000px, 100%);
+  max-height: 100%;
+  overflow-y: auto;
+  background: var(--paper);
+  display: grid;
+}
+@media (min-width: 820px) { .sheet { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.p-media { background: var(--stone); display: flex; align-items: center; justify-content: center; }
+.p-media img { width: 100%; max-height: 78vh; aspect-ratio: 4 / 5; object-fit: contain; }
+.p-info { padding: 28px 24px 32px; display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+@media (min-width: 820px) { .p-info { padding: 48px 40px; } }
+.p-info h2 { font-size: clamp(26px, 3vw, 34px); line-height: 1.15; padding-right: 40px; }
+.p-price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+.p-price strong { font-size: 26px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.p-price span { font-size: 14px; color: var(--graphite); }
+.p-desc { color: var(--graphite); font-size: 15px; }
+.opt { border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.opt legend { font-size: 14px; font-weight: 600; padding: 0; margin-bottom: 10px; }
+.modes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.mode {
+  text-align: left;
+  padding: 12px 14px;
+  border: 1px solid var(--hairline);
+  border-radius: 2px;
+  background: var(--paper);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.mode strong { font-size: 14px; font-weight: 600; }
+.mode span { font-size: 13px; color: var(--graphite); font-variant-numeric: tabular-nums; }
+.mode[aria-pressed="true"] { border: 2px solid var(--ink); padding: 11px 13px; }
+.sizes { display: flex; flex-wrap: wrap; gap: 8px; }
+.size {
+  min-width: 52px;
+  min-height: 46px;
+  padding: 0 10px;
+  border: 1px solid var(--hairline);
+  border-radius: 2px;
+  background: var(--paper);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.size[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.note { background: var(--stone); padding: 12px 14px; font-size: 14px; color: var(--graphite); }
+.buy-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.buy-row .btn { flex: 1 1 200px; }
+.qty { display: inline-flex; align-items: center; border: 1px solid var(--hairline); border-radius: 2px; }
+.qty button { width: 44px; height: 46px; border: 0; background: none; font-size: 18px; cursor: pointer; }
+.qty output { min-width: 26px; text-align: center; font-weight: 600; font-variant-numeric: tabular-nums; }
+.error { color: var(--alert); font-size: 14px; font-weight: 500; min-height: 0; }
+.error:empty { display: none; }
+.p-facts { list-style: none; margin: 0; padding: 16px 0 0; border-top: 1px solid var(--hairline); display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: var(--graphite); }
+
+/* Cart drawer */
+.overlay-right { justify-content: flex-end; align-items: stretch; padding: 0; }
+.drawer {
+  width: min(460px, 100%);
+  height: 100%;
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+.drawer-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 20px; border-bottom: 1px solid var(--hairline); }
+.drawer-head h2 { font-size: 24px; }
+.drawer-head .close { position: static; }
+.drawer-body { flex: 1 1 auto; overflow-y: auto; padding: 18px 20px 24px; display: flex; flex-direction: column; gap: 22px; }
+.drawer-foot { border-top: 1px solid var(--hairline); padding: 16px 20px 18px; display: flex; flex-direction: column; gap: 10px; background: var(--paper); }
+.progress { display: flex; flex-direction: column; gap: 8px; font-size: 14px; }
+.bar { height: 6px; background: var(--stone); overflow: hidden; }
+.bar span { display: block; height: 100%; background: var(--whatsapp); }
+.lines { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.line { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--hairline); }
+.line img { width: 72px; height: 90px; object-fit: cover; background: var(--stone); }
+.line-info { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.line-name { font-size: 14px; font-weight: 600; line-height: 1.35; }
+.line-meta { font-size: 13px; color: var(--graphite); }
+.line-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-top: 4px; }
+.line-row .qty button { width: 38px; height: 38px; }
+.line-total { font-weight: 600; font-variant-numeric: tabular-nums; font-size: 14px; }
+.zones { display: flex; flex-direction: column; gap: 8px; }
+.zone {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 4px 10px;
+  align-items: start;
+  padding: 12px 14px;
+  border: 1px solid var(--hairline);
+  cursor: pointer;
+}
+.zone:has(input:checked) { border: 2px solid var(--ink); padding: 11px 13px; }
+.zone input { margin: 3px 0 0; accent-color: var(--ink); }
+.zone strong { font-size: 14px; font-weight: 600; }
+.zone .fee { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.zone small { grid-column: 2 / 4; font-size: 12.5px; color: var(--graphite); }
+.form { display: flex; flex-direction: column; gap: 14px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: 13px; font-weight: 600; }
+.field input {
+  min-height: 46px;
+  padding: 0 14px;
+  border: 1px solid var(--hairline);
+  border-radius: 2px;
+  background: var(--paper);
+  font-size: 15px;
+}
+.field input:focus-visible { outline: 2px solid var(--ink); outline-offset: 0; }
+.field input[aria-invalid="true"] { border-color: var(--alert); }
+.pays { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.pay {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--hairline);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.pay:has(input:checked) { border: 2px solid var(--ink); padding: 0 11px; }
+.pay input { accent-color: var(--ink); margin: 0; }
+.sum { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; font-variant-numeric: tabular-nums; }
+.sum.total { font-size: 18px; font-weight: 600; padding-top: 6px; border-top: 1px solid var(--hairline); }
+.fine { font-size: 12.5px; color: var(--graphite); }
+.copy-fallback { width: 100%; min-height: 140px; padding: 10px; border: 1px solid var(--hairline); font-size: 13px; }
+.cart-empty { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; padding: 24px 0; color: var(--graphite); }
+
+/* Toast */
+.toast {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+  z-index: 55;
+  width: max-content;
+  max-width: calc(100% - 32px);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+}
+.toast button { background: none; border: 0; color: var(--paper); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; padding: 6px 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+</style>
+</head>
+<body>
+
+
+<div class="strip">
+  <div class="wrap">
+    <span>Livraison en 24 h à Abidjan</span>
+    <span>Envoi dans tout le pays</span>
+    <span>Paiement Wave, Orange Money, MTN MoMo, Moov Money</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="#accueil" aria-label="Seph'K, retour en haut de la page"><img src="images/logo.png" alt="" width="271" height="276"></a>
+    <nav class="head-nav" aria-label="Sections de la boutique">
+      <a href="#collection">Collection</a>
+      <a href="#signature">Signature</a>
+      <a href="#sur-mesure">Sur mesure</a>
+      <a href="#livraison">Livraison</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-btn" id="open-cart" type="button">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>
+      <span>Panier</span>
+      <span class="cart-count" id="cart-count">0</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Nouvelle collection · Homme</p>
+        <h1>Des chemises qui se reconnaissent <em>à leur poche.</em></h1>
+        <p class="lead">Batik, pagne tissé et rayures, cousus à Abidjan. Choisissez votre modèle, remplissez votre panier et envoyez la commande sur WhatsApp : nous confirmons, vous réglez par mobile money.</p>
+        <div class="actions">
+          <a class="btn btn-ink" href="#collection">Voir la collection</a>
+          <a class="btn btn-line" id="hero-wa" href="https://wa.me/2250500103243" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+        </div>
+        <dl class="facts">
+          <div><dt>Modèles</dt><dd id="fact-count">12</dd></div>
+          <div><dt>Tailles</dt><dd>S à 3XL</dd></div>
+          <div><dt>Sur mesure</dt><dd>7 à 10 jours</dd></div>
+        </dl>
+      </div>
+      <div class="looks">
+        <figure class="look"><img src="images/sk-02.jpg" alt="Veste kimono noire à revers bleu roi et liseré or, portée" style="object-position: 50% 18%"><figcaption>SK-02</figcaption></figure>
+        <figure class="look"><img src="images/sk-06.jpg" alt="Tunique manches courtes bleu ciel, moitié rayée, portée" style="object-position: 50% 20%"><figcaption>SK-06</figcaption></figure>
+        <figure class="look"><img src="images/sk-08.jpg" alt="Chemise col mao blanche à imprimé encre indigo, portée" style="object-position: 50% 30%"><figcaption>SK-08</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="collection" id="collection" aria-labelledby="collection-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="title-block">
+          <p class="eyebrow">Prêt-à-porter et sur mesure</p>
+          <h2 id="collection-title">La collection</h2>
+        </div>
+        <div class="tools">
+          <div class="chips" id="chips" role="group" aria-label="Filtrer les modèles"></div>
+          <label class="sort" for="sort">Trier
+            <select id="sort">
+              <option value="selection">Sélection</option>
+              <option value="prix-asc">Prix croissant</option>
+              <option value="prix-desc">Prix décroissant</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>
+        <h3>Femme et enfant : bientôt en ligne</h3>
+        <p>Les modèles femme et enfant arrivent sur la boutique en ligne. Vous pouvez déjà les commander en sur mesure : décrivez-nous la tenue souhaitée sur WhatsApp.</p>
+        <a class="btn btn-wa" id="empty-wa" href="https://wa.me/2250500103243" target="_blank" rel="noopener">Demander un modèle sur WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="signature" id="signature" aria-labelledby="signature-title">
+    <div class="wrap">
+      <div class="sig-copy">
+        <p class="eyebrow">La signature Seph'K</p>
+        <h2 id="signature-title">Chaque chemise porte sa poche.</h2>
+        <p>Pagne tissé, batik ou rayures contrastées : la poche signe le modèle, en prêt-à-porter comme en sur mesure.</p>
+      </div>
+      <div class="tiles">
+        <figure class="tile"><img src="images/poche-a.jpg" alt="Poche en pagne tissé rayé orange sur une chemise batik kaki" style="object-position: 50% 35%" loading="lazy"><figcaption><button type="button" data-open="SK-12">SK-12 · voir le modèle</button></figcaption></figure>
+        <figure class="tile"><img src="images/poche-b.jpg" alt="Poches à rayures violettes sur une saharienne marron" loading="lazy"><figcaption><button type="button" data-open="SK-05">SK-05 · voir le modèle</button></figcaption></figure>
+        <figure class="tile"><img src="images/poche-c.jpg" alt="Poches à rayures corail et grises sur une tunique blanche" loading="lazy"><figcaption><button type="button" data-open="SK-04">SK-04 · voir le modèle</button></figcaption></figure>
+        <figure class="tile"><img src="images/poche-d.jpg" alt="Poches allongées saumon sur une chemise batik ocre" style="object-position: 50% 30%" loading="lazy"><figcaption><button type="button" data-open="SK-10">SK-10 · voir le modèle</button></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="made" id="sur-mesure" aria-labelledby="made-title">
+    <div class="wrap">
+      <div class="title-block">
+        <p class="eyebrow">Sur mesure</p>
+        <h2 class="section-title" id="made-title">Votre modèle, à vos mesures</h2>
+      </div>
+      <ol class="steps">
+        <li class="step"><span class="step-n">Étape 1</span><h3>Choisissez le modèle</h3><p>Sur la fiche du modèle, sélectionnez « Sur mesure ». Le prix inclut un supplément de 15 %.</p></li>
+        <li class="step"><span class="step-n">Étape 2</span><h3>Transmettez vos mesures</h3><p>Nous vous guidons sur WhatsApp pour les prendre, ou vous passez en boutique.</p></li>
+        <li class="step"><span class="step-n">Étape 3</span><h3>Recevez votre tenue</h3><p>Sous 7 à 10 jours après un acompte de 50 %, livrée ou à retirer en boutique.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="delivery" id="livraison" aria-labelledby="delivery-title">
+    <div class="wrap">
+      <div class="title-block" style="gap: 20px">
+        <p class="eyebrow">Livraison et retrait</p>
+        <h2 class="section-title" id="delivery-title">Livré à Abidjan en 24 h</h2>
+        <div class="table-box">
+          <table class="zone-table">
+            <thead><tr><th scope="col">Zone</th><th scope="col">Tarif</th></tr></thead>
+            <tbody id="zone-rows"></tbody>
+          </table>
+        </div>
+        <p class="fine">Livraison offerte à Abidjan dès 60 000 FCFA d'achat.</p>
+      </div>
+      <div class="pay-block">
+        <p class="eyebrow">Paiement</p>
+        <ul class="pay-list">
+          <li>Wave</li>
+          <li>Orange Money</li>
+          <li>MTN MoMo</li>
+          <li>Moov Money</li>
+        </ul>
+        <p>Votre commande arrive sur notre WhatsApp. Nous confirmons la disponibilité et les délais, puis nous vous envoyons le moyen de paiement. Rien n'est réglé avant cette confirmation.</p>
+        <p>Sur mesure : acompte de 50 % à la commande, solde à la remise.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <div class="foot-row">
+      <div class="foot-brand">
+        <img src="images/logo.png" alt="Seph'K" width="271" height="276">
+        <p>Chemises, tuniques et ensembles homme. Prêt-à-porter et sur mesure, Abidjan, Côte d'Ivoire.</p>
+      </div>
+      <div class="foot-contact">
+        <p class="eyebrow">Commandes et conseil sur WhatsApp</p>
+        <div class="phone-line">
+          <span class="phone" id="phone">+225 05 00 10 32 43</span>
+          <button class="copy-btn" id="copy-phone" type="button">Copier le numéro</button>
+        </div>
+        <a class="btn btn-wa" id="foot-wa" href="https://wa.me/2250500103243" target="_blank" rel="noopener">Ouvrir la conversation</a>
+      </div>
+    </div>
+    <p class="foot-legal">© 2026 Seph'K · Abidjan</p>
+  </div>
+</footer>
+
+<a class="wa-float" id="wa-float" href="https://wa.me/2250500103243" target="_blank" rel="noopener">
+  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1L4 20z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<div class="overlay" id="product-overlay" hidden>
+  <div class="sheet" id="product-sheet" role="dialog" aria-modal="true" aria-labelledby="p-name">
+    <button class="close" id="p-close" type="button" aria-label="Fermer la fiche">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="p-media"><img id="p-img" src="images/sk-01.jpg" alt=""></div>
+    <div class="p-info">
+      <p class="eyebrow" id="p-ref">SK-01</p>
+      <h2 id="p-name">Modèle</h2>
+      <p class="p-price"><strong id="p-price">0 FCFA</strong><span id="p-delay"></span></p>
+      <p class="p-desc" id="p-desc"></p>
+      <fieldset class="opt">
+        <legend>Fabrication</legend>
+        <div class="modes" id="p-modes"></div>
+      </fieldset>
+      <fieldset class="opt" id="p-size-field">
+        <legend>Taille</legend>
+        <div class="sizes" id="p-sizes"></div>
+      </fieldset>
+      <p class="note" id="p-measure-note" hidden>Après la commande, nous vous guidons sur WhatsApp pour prendre vos mesures, ou vous passez en boutique. Acompte de 50 % à la commande.</p>
+      <div class="buy-row">
+        <div class="qty">
+          <button type="button" id="p-minus" aria-label="Retirer une pièce">−</button>
+          <output id="p-qty" aria-live="polite">1</output>
+          <button type="button" id="p-plus" aria-label="Ajouter une pièce">+</button>
+        </div>
+        <button class="btn btn-ink" id="p-add" type="button">Ajouter au panier</button>
+      </div>
+      <p class="error" id="p-error" role="alert"></p>
+      <a class="btn btn-wa" id="p-wa" href="https://wa.me/2250500103243" target="_blank" rel="noopener">Commander ce modèle sur WhatsApp</a>
+      <ul class="p-facts">
+        <li>Livraison en 24 h à Abidjan, envoi dans tout le pays</li>
+        <li>Retrait gratuit en boutique</li>
+        <li>Paiement Wave, Orange Money, MTN MoMo, Moov Money</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="overlay overlay-right" id="cart-overlay" hidden>
+  <aside class="drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <div class="drawer-head">
+      <h2 id="cart-title">Votre panier</h2>
+      <button class="close" id="cart-close" type="button" aria-label="Fermer le panier">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="drawer-body">
+      <div class="cart-empty" id="cart-empty">
+        <p>Votre panier est vide.</p>
+        <button class="btn btn-line" id="cart-browse" type="button">Voir la collection</button>
+      </div>
+      <div id="cart-filled" style="display: flex; flex-direction: column; gap: 22px">
+        <div class="progress" id="progress">
+          <span id="progress-text"></span>
+          <div class="bar"><span id="progress-bar" style="width: 0%"></span></div>
+        </div>
+        <ul class="lines" id="lines"></ul>
+        <fieldset class="opt">
+          <legend>Mode de remise</legend>
+          <div class="zones" id="zones"></div>
+        </fieldset>
+        <form class="form" id="order-form" novalidate>
+          <div class="field"><label for="c-nom">Nom complet</label><input id="c-nom" name="nom" type="text" autocomplete="name" placeholder="Ex. Konan Yao"></div>
+          <div class="field"><label for="c-tel">Numéro WhatsApp</label><input id="c-tel" name="tel" type="tel" autocomplete="tel" placeholder="Ex. 07 08 09 10 11"></div>
+          <div class="field" id="adresse-field"><label for="c-adresse">Commune et point de repère</label><input id="c-adresse" name="adresse" type="text" autocomplete="street-address" placeholder="Ex. Cocody Angré, près de la pharmacie"></div>
+          <fieldset class="opt">
+            <legend>Paiement souhaité</legend>
+            <div class="pays" id="pays"></div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="drawer-foot" id="cart-foot">
+      <div class="sum"><span>Sous-total</span><span id="s-sub">0 FCFA</span></div>
+      <div class="sum"><span id="s-zone-label">Livraison</span><span id="s-fee">0 FCFA</span></div>
+      <div class="sum total"><span>Total</span><span id="s-total">0 FCFA</span></div>
+      <p class="error" id="c-error" role="alert"></p>
+      <a class="btn btn-wa" id="send" href="https://wa.me/2250500103243" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1L4 20z"/></svg>
+        Envoyer la commande sur WhatsApp
+      </a>
+      <button class="btn-text" id="copy-msg" type="button">Copier le message de commande</button>
+      <textarea class="copy-fallback" id="msg-fallback" aria-label="Message de commande à copier" readonly hidden></textarea>
+      <p class="fine">Nous confirmons la disponibilité sur WhatsApp, puis nous vous envoyons le moyen de paiement.</p>
+    </div>
+  </aside>
+</div>
+
+<div class="toast" id="toast" role="status" hidden>
+  <span id="toast-text">Ajouté au panier</span>
+  <button type="button" id="toast-open">Voir le panier</button>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---- Réglages de la boutique ---- */
+  var WHATSAPP = '2250500103243';
+  var SEUIL_LIVRAISON_OFFERTE = 60000;
+  var SUPPLEMENT_SUR_MESURE = 0.15;
+  var TAILLES = ['S', 'M', 'L', 'XL', 'XXL', '3XL'];
+  var RAYONS = { longues: 'Manches longues', courtes: 'Manches courtes', ensembles: 'Ensembles et vestes' };
+
+  /* ---- Catalogue : un modèle par ligne ---- */
+  var CATALOGUE = [
+    { ref: 'SK-01', nom: 'Chemise col romain bleu roi', rayon: 'longues', prix: 25000, image: 'images/sk-01.jpg', cadrage: '50% 20%', badge: '', details: 'Col romain, manches longues, deux poches poitrine à rabat ornées d’un empiècement tissé.' },
+    { ref: 'SK-02', nom: 'Veste kimono noire, revers bleu et or', rayon: 'ensembles', prix: 35000, image: 'images/sk-02.jpg', cadrage: '50% 22%', badge: 'Nouveau', details: 'Veste ouverte de coupe kimono, revers bleu roi bordé d’un liseré or, manches trois-quarts.' },
+    { ref: 'SK-03', nom: 'Chemise batik indigo, poches contrastées', rayon: 'longues', prix: 22000, image: 'images/sk-03.jpg', cadrage: '50% 32%', badge: '', details: 'Col mao, manches longues, batik indigo et prune, trois poches blanches à motifs.' },
+    { ref: 'SK-04', nom: 'Tunique blanche, manches rayées corail', rayon: 'longues', prix: 20000, image: 'images/sk-04.jpg', cadrage: '50% 30%', badge: '', details: 'Col mao et patte boutonnée, manches et poches à rayures corail, grises et bleues.' },
+    { ref: 'SK-05', nom: 'Saharienne marron, poches rayées violet', rayon: 'longues', prix: 25000, image: 'images/sk-05.jpg', cadrage: '50% 45%', badge: '', details: 'Col mao, pattes d’épaule, poches plaquées à rayures violettes.' },
+    { ref: 'SK-06', nom: 'Tunique bicolore bleu ciel', rayon: 'courtes', prix: 18000, image: 'images/sk-06.jpg', cadrage: '50% 20%', badge: 'Nouveau', details: 'Manches courtes, encolure ronde, moitié rayée et moitié unie, poche à rabat rayée.' },
+    { ref: 'SK-07', nom: 'Chemise rose saumon, poche à liseré', rayon: 'longues', prix: 20000, image: 'images/sk-07.jpg', cadrage: '50% 45%', badge: '', details: 'Col classique, manches longues, grande poche plaquée bordée d’un liseré.' },
+    { ref: 'SK-08', nom: 'Chemise col mao imprimé encre indigo', rayon: 'longues', prix: 22000, image: 'images/sk-08.jpg', cadrage: '50% 30%', badge: 'Nouveau', details: 'Col mao, manches longues, imprimé effet encre indigo sur fond blanc, deux poches à rabat.' },
+    { ref: 'SK-09', nom: 'Ensemble beige, chemise rayée et pantalon', rayon: 'ensembles', prix: 38000, image: 'images/sk-09.jpg', cadrage: '50% 25%', badge: '', details: 'Chemise col mao à rayures beige et blanc, poches et manches unies, pantalon beige assorti.' },
+    { ref: 'SK-10', nom: 'Chemise batik ocre, poches saumon', rayon: 'courtes', prix: 18000, image: 'images/sk-10.jpg', cadrage: '50% 40%', badge: '', details: 'Manches courtes, col mao, batik ocre, poches allongées saumon.' },
+    { ref: 'SK-11', nom: 'Chemise blanche, liserés batik turquoise', rayon: 'courtes', prix: 15000, image: 'images/sk-11.jpg', cadrage: '50% 40%', badge: '', details: 'Manches courtes, encolure ronde, patte, poche et épaules bordées de batik turquoise.' },
+    { ref: 'SK-12', nom: 'Chemise batik kaki, poches tissées orange', rayon: 'courtes', prix: 18000, image: 'images/sk-12.jpg', cadrage: '50% 40%', badge: '', details: 'Manches courtes, col mao, batik kaki, poches allongées en pagne tissé rayé orange.' }
+  ];
+
+  var ZONES = [
+    { id: 'centre', nom: 'Abidjan centre', detail: 'Plateau, Cocody, Marcory, Treichville, Adjamé · 24 h', frais: 1500, abidjan: true },
+    { id: 'peripherie', nom: 'Abidjan périphérie', detail: 'Yopougon, Abobo, Port-Bouët, Bingerville, Anyama · 24 à 48 h', frais: 2500, abidjan: true },
+    { id: 'interieur', nom: 'Intérieur du pays', detail: 'Colis par car ou messagerie, 24 à 72 h · tarif confirmé sur WhatsApp', frais: null, abidjan: false },
+    { id: 'retrait', nom: 'Retrait en boutique', detail: 'Dès confirmation de la commande', frais: 0, abidjan: false }
+  ];
+  var PAIEMENTS = ['Wave', 'Orange Money', 'MTN MoMo', 'Moov Money'];
+  var FILTRES = [
+    { id: 'tout', label: 'Tout' },
+    { id: 'longues', label: 'Manches longues' },
+    { id: 'courtes', label: 'Manches courtes' },
+    { id: 'ensembles', label: 'Ensembles et vestes' },
+    { id: 'femme-enfant', label: 'Femme et enfant' }
+  ];
+
+  /* ---- Outils ---- */
+  function $(id) { return document.getElementById(id); }
+  function fmt(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' FCFA'; }
+  function prixSurMesure(p) { return Math.round(p * (1 + SUPPLEMENT_SUR_MESURE) / 100) * 100; }
+  function prixUnitaire(p, mode) { return mode === 'mesure' ? prixSurMesure(p.prix) : p.prix; }
+  function trouver(ref) { for (var i = 0; i < CATALOGUE.length; i++) { if (CATALOGUE[i].ref === ref) return CATALOGUE[i]; } return null; }
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function waLien(texte) { return 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(texte); }
+
+  /* ---- État (gardé dans ce navigateur) ---- */
+  var CLE = 'sephk-boutique-v1';
+  var etat = { panier: [], zone: 'centre', paiement: 'Wave', nom: '', tel: '', adresse: '' };
+  try {
+    var brut = localStorage.getItem(CLE);
+    if (brut) {
+      var lu = JSON.parse(brut);
+      if (lu && Array.isArray(lu.panier)) {
+        etat.panier = lu.panier.filter(function (l) { return trouver(l.ref) && l.qty > 0; });
+        if (lu.zone) etat.zone = lu.zone;
+        if (lu.paiement) etat.paiement = lu.paiement;
+        etat.nom = lu.nom || ''; etat.tel = lu.tel || ''; etat.adresse = lu.adresse || '';
+      }
+    }
+  } catch (e) { /* stockage indisponible : la page fonctionne sans */ }
+  function sauver() { try { localStorage.setItem(CLE, JSON.stringify(etat)); } catch (e) { } }
+
+  var filtre = 'tout';
+  var tri = 'selection';
+
+  /* ---- Liens WhatsApp généraux ---- */
+  var accueilMsg = 'Bonjour Seph’K, j’aimerais avoir des informations sur vos modèles.';
+  $('hero-wa').href = waLien(accueilMsg);
+  $('foot-wa').href = waLien(accueilMsg);
+  $('wa-float').href = waLien(accueilMsg);
+  $('empty-wa').href = waLien('Bonjour Seph’K, je souhaite commander un modèle femme ou enfant sur mesure.');
+  $('fact-count').textContent = CATALOGUE.length;
+
+  /* ---- Tableau des zones ---- */
+  $('zone-rows').innerHTML = ZONES.map(function (z) {
+    var tarif = z.frais === null ? 'Sur devis' : (z.frais === 0 ? 'Gratuit' : fmt(z.frais));
+    return '<tr><td>' + esc(z.nom) + '<span class="sub">' + esc(z.detail) + '</span></td><td>' + tarif + '</td></tr>';
+  }).join('');
+
+  /* ---- Filtres et grille ---- */
+  function compter(id) {
+    if (id === 'tout') return CATALOGUE.length;
+    if (id === 'femme-enfant') return 0;
+    return CATALOGUE.filter(function (p) { return p.rayon === id; }).length;
+  }
+  function rendreFiltres() {
+    $('chips').innerHTML = FILTRES.map(function (f) {
+      var n = compter(f.id);
+      var info = f.id === 'femme-enfant' ? 'bientôt' : n;
+      return '<button class="chip" type="button" data-filtre="' + f.id + '" aria-pressed="' + (filtre === f.id) + '">' + esc(f.label) + ' <span class="n">' + info + '</span></button>';
+    }).join('');
+  }
+  function rendreGrille() {
+    var liste = CATALOGUE.filter(function (p) { return filtre === 'tout' || p.rayon === filtre; });
+    if (tri === 'prix-asc') liste = liste.slice().sort(function (a, b) { return a.prix - b.prix; });
+    if (tri === 'prix-desc') liste = liste.slice().sort(function (a, b) { return b.prix - a.prix; });
+    var vide = filtre === 'femme-enfant';
+    $('empty').hidden = !vide;
+    $('grid').hidden = vide;
+    $('grid').innerHTML = liste.map(function (p) {
+      return '<article class="card"><button class="card-hit" type="button" data-open="' + p.ref + '">' +
+        '<span class="card-media"><img src="' + p.image + '" alt="' + esc(p.nom) + '" loading="lazy" style="object-position:' + p.cadrage + '">' +
+        (p.badge ? '<span class="badge">' + esc(p.badge) + '</span>' : '') + '</span>' +
+        '<span class="card-ref">' + p.ref + ' · ' + esc(RAYONS[p.rayon]) + '</span>' +
+        '<span class="card-name">' + esc(p.nom) + '</span>' +
+        '<span class="card-price">' + fmt(p.prix) + '</span>' +
+        '<span class="card-cta">Choisir la taille</span>' +
+        '</button></article>';
+    }).join('');
+  }
+  $('chips').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-filtre]');
+    if (!b) return;
+    filtre = b.getAttribute('data-filtre');
+    rendreFiltres();
+    rendreGrille();
+  });
+  $('sort').addEventListener('change', function () { tri = this.value; rendreGrille(); });
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-open]');
+    if (b) ouvrirFiche(b.getAttribute('data-open'), b);
+  });
+
+  /* ---- Fenêtres (fiche et panier) ---- */
+  var dernierFocus = null;
+  var ouverte = null;
+  function focusables(root) {
+    return Array.prototype.filter.call(root.querySelectorAll('a[href], button:not([disabled]), input, select, textarea:not([hidden])'), function (el) { return el.offsetParent !== null; });
+  }
+  function ouvrir(overlay, focusEl, origine) {
+    dernierFocus = origine || document.activeElement;
+    overlay.hidden = false;
+    ouverte = overlay;
+    document.documentElement.style.overflow = 'hidden';
+    $('wa-float').hidden = true;
+    $('toast').hidden = true;
+    if (focusEl) focusEl.focus();
+  }
+  function fermer() {
+    if (!ouverte) return;
+    ouverte.hidden = true;
+    ouverte = null;
+    document.documentElement.style.overflow = '';
+    $('wa-float').hidden = false;
+    if (dernierFocus && document.contains(dernierFocus)) dernierFocus.focus();
+  }
+  document.addEventListener('keydown', function (e) {
+    if (!ouverte) return;
+    if (e.key === 'Escape') { e.preventDefault(); fermer(); return; }
+    if (e.key === 'Tab') {
+      var f = focusables(ouverte);
+      if (!f.length) return;
+      var premier = f[0], dernier = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === premier) { e.preventDefault(); dernier.focus(); }
+      else if (!e.shiftKey && document.activeElement === dernier) { e.preventDefault(); premier.focus(); }
+    }
+  });
+  [$('product-overlay'), $('cart-overlay')].forEach(function (ov) {
+    ov.addEventListener('click', function (e) { if (e.target === ov) fermer(); });
+  });
+  $('p-close').addEventListener('click', fermer);
+  $('cart-close').addEventListener('click', fermer);
+
+  /* ---- Fiche produit ---- */
+  var fiche = { ref: null, mode: 'pap', taille: null, qty: 1 };
+  function ouvrirFiche(ref, origine) {
+    var p = trouver(ref);
+    if (!p) return;
+    fiche = { ref: ref, mode: 'pap', taille: null, qty: 1 };
+    $('p-img').src = p.image;
+    $('p-img').alt = p.nom;
+    $('p-ref').textContent = p.ref + ' · ' + RAYONS[p.rayon];
+    $('p-name').textContent = p.nom;
+    $('p-desc').textContent = p.details;
+    $('p-error').textContent = '';
+    rendreFiche();
+    if (ouverte) { ouverte.hidden = true; ouverte = null; }
+    ouvrir($('product-overlay'), $('p-close'), origine);
+    $('product-sheet').scrollTop = 0;
+  }
+  function rendreFiche() {
+    var p = trouver(fiche.ref);
+    if (!p) return;
+    var mesure = fiche.mode === 'mesure';
+    $('p-price').textContent = fmt(prixUnitaire(p, fiche.mode));
+    $('p-delay').textContent = mesure ? 'Sur mesure · prêt en 7 à 10 jours' : 'Prêt-à-porter · livré en 24 h à Abidjan';
+    $('p-modes').innerHTML =
+      '<button class="mode" type="button" data-mode="pap" aria-pressed="' + !mesure + '"><strong>Prêt-à-porter</strong><span>' + fmt(p.prix) + ' · 24 h</span></button>' +
+      '<button class="mode" type="button" data-mode="mesure" aria-pressed="' + mesure + '"><strong>Sur mesure</strong><span>' + fmt(prixSurMesure(p.prix)) + ' · 7 à 10 jours</span></button>';
+    $('p-size-field').hidden = mesure;
+    $('p-measure-note').hidden = !mesure;
+    $('p-sizes').innerHTML = TAILLES.map(function (t) {
+      return '<button class="size" type="button" data-taille="' + t + '" aria-pressed="' + (fiche.taille === t) + '">' + t + '</button>';
+    }).join('');
+    $('p-qty').textContent = fiche.qty;
+    var detail = mesure ? 'sur mesure' : (fiche.taille ? 'taille ' + fiche.taille + ', prêt-à-porter' : 'prêt-à-porter, taille à préciser');
+    $('p-wa').href = waLien('Bonjour Seph’K, je suis intéressé par le modèle ' + p.ref + ' (' + p.nom + '), ' + detail + ', ' + fiche.qty + ' pièce' + (fiche.qty > 1 ? 's' : '') + ' à ' + fmt(prixUnitaire(p, fiche.mode)) + '. Est-il disponible ?');
+  }
+  $('p-modes').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-mode]');
+    if (!b) return;
+    fiche.mode = b.getAttribute('data-mode');
+    $('p-error').textContent = '';
+    rendreFiche();
+  });
+  $('p-sizes').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-taille]');
+    if (!b) return;
+    fiche.taille = b.getAttribute('data-taille');
+    $('p-error').textContent = '';
+    rendreFiche();
+    var sel = $('p-sizes').querySelector('[data-taille="' + fiche.taille + '"]');
+    if (sel) sel.focus();
+  });
+  $('p-minus').addEventListener('click', function () { if (fiche.qty > 1) { fiche.qty--; rendreFiche(); } });
+  $('p-plus').addEventListener('click', function () { if (fiche.qty < 20) { fiche.qty++; rendreFiche(); } });
+  $('p-add').addEventListener('click', function () {
+    if (fiche.mode === 'pap' && !fiche.taille) {
+      $('p-error').textContent = 'Choisissez une taille pour ajouter ce modèle au panier.';
+      var premier = $('p-sizes').querySelector('button');
+      if (premier) premier.focus();
+      return;
+    }
+    var taille = fiche.mode === 'mesure' ? '' : fiche.taille;
+    var existant = etat.panier.filter(function (l) { return l.ref === fiche.ref && l.mode === fiche.mode && l.taille === taille; })[0];
+    if (existant) existant.qty += fiche.qty;
+    else etat.panier.push({ ref: fiche.ref, mode: fiche.mode, taille: taille, qty: fiche.qty });
+    sauver();
+    rendrePanier();
+    fermer();
+    var p = trouver(fiche.ref);
+    $('toast-text').textContent = p.nom + ' ajouté au panier';
+    $('toast').hidden = false;
+    clearTimeout(window.__sephkToast);
+    window.__sephkToast = setTimeout(function () { $('toast').hidden = true; }, 5000);
+  });
+  $('toast-open').addEventListener('click', function () { $('toast').hidden = true; ouvrirPanier(); });
+
+  /* ---- Panier ---- */
+  function zoneCourante() { return ZONES.filter(function (z) { return z.id === etat.zone; })[0] || ZONES[0]; }
+  function sousTotal() { return etat.panier.reduce(function (s, l) { var p = trouver(l.ref); return s + (p ? prixUnitaire(p, l.mode) * l.qty : 0); }, 0); }
+  function fraisLivraison(z, st) {
+    if (z.frais === null) return null;
+    if (z.abidjan && st >= SEUIL_LIVRAISON_OFFERTE) return 0;
+    return z.frais;
+  }
+  function nbArticles() { return etat.panier.reduce(function (s, l) { return s + l.qty; }, 0); }
+
+  function message() {
+    var z = zoneCourante();
+    var st = sousTotal();
+    var f = fraisLivraison(z, st);
+    var lignes = etat.panier.map(function (l, i) {
+      var p = trouver(l.ref);
+      var desc = l.mode === 'mesure' ? 'Sur mesure' : 'Taille ' + l.taille + ', prêt-à-porter';
+      return (i + 1) + '. ' + p.nom + ' (' + p.ref + ')\n    ' + desc + ' · ' + l.qty + ' × ' + fmt(prixUnitaire(p, l.mode));
+    });
+    var fraisTexte = f === null ? 'tarif à confirmer' : (f === 0 ? (z.id === 'retrait' ? 'gratuit' : 'offerte') : fmt(f));
+    var total = f === null ? fmt(st) + ' + frais d’envoi' : fmt(st + f);
+    var texte = 'Bonjour Seph’K, je souhaite passer commande :\n\n' + lignes.join('\n') +
+      '\n\nSous-total : ' + fmt(st) +
+      '\n' + z.nom + ' : ' + fraisTexte +
+      '\nTotal : ' + total +
+      '\nPaiement souhaité : ' + etat.paiement +
+      '\n\nNom : ' + (etat.nom.trim() || '…') +
+      '\nWhatsApp : ' + (etat.tel.trim() || '…');
+    if (z.id !== 'retrait') texte += '\nAdresse : ' + (etat.adresse.trim() || '…');
+    if (etat.panier.some(function (l) { return l.mode === 'mesure'; })) texte += '\n\nPour le sur mesure, je note l’acompte de 50 % à la commande.';
+    return texte;
+  }
+
+  function rendrePanier() {
+    var n = nbArticles();
+    $('cart-count').textContent = n;
+    $('open-cart').setAttribute('aria-label', 'Ouvrir le panier, ' + n + ' article' + (n > 1 ? 's' : ''));
+    var vide = etat.panier.length === 0;
+    $('cart-empty').hidden = !vide;
+    $('cart-filled').hidden = vide;
+    $('cart-foot').hidden = vide;
+    if (vide) return;
+
+    $('lines').innerHTML = etat.panier.map(function (l, i) {
+      var p = trouver(l.ref);
+      var u = prixUnitaire(p, l.mode);
+      var desc = l.mode === 'mesure' ? 'Sur mesure · 7 à 10 jours' : 'Taille ' + l.taille + ' · prêt-à-porter';
+      return '<li class="line"><img src="' + p.image + '" alt="" style="object-position:' + p.cadrage + '">' +
+        '<div class="line-info"><span class="line-name">' + esc(p.nom) + '</span>' +
+        '<span class="line-meta">' + p.ref + ' · ' + desc + ' · ' + fmt(u) + '</span>' +
+        '<div class="line-row"><div class="qty"><button type="button" data-moins="' + i + '" aria-label="Retirer une pièce de ' + esc(p.nom) + '">−</button><output>' + l.qty + '</output><button type="button" data-plus="' + i + '" aria-label="Ajouter une pièce de ' + esc(p.nom) + '">+</button></div>' +
+        '<span class="line-total">' + fmt(u * l.qty) + '</span></div>' +
+        '<button class="btn-text" type="button" data-retirer="' + i + '" style="align-self: flex-start">Retirer</button></div></li>';
+    }).join('');
+
+    var z = zoneCourante();
+    var st = sousTotal();
+    var f = fraisLivraison(z, st);
+    $('zones').innerHTML = ZONES.map(function (zz) {
+      var ff = fraisLivraison(zz, st);
+      var tarif = ff === null ? 'Sur devis' : (ff === 0 ? (zz.id === 'retrait' ? 'Gratuit' : 'Offerte') : fmt(ff));
+      return '<label class="zone"><input type="radio" name="zone" value="' + zz.id + '"' + (zz.id === z.id ? ' checked' : '') + '><strong>' + esc(zz.nom) + '</strong><span class="fee">' + tarif + '</span><small>' + esc(zz.detail) + '</small></label>';
+    }).join('');
+    $('pays').innerHTML = PAIEMENTS.map(function (m, i) {
+      return '<label class="pay" for="pay-' + i + '"><input type="radio" id="pay-' + i + '" name="paiement" value="' + esc(m) + '"' + (etat.paiement === m ? ' checked' : '') + '>' + esc(m) + '</label>';
+    }).join('');
+
+    $('adresse-field').hidden = z.id === 'retrait';
+    if (z.abidjan) {
+      $('progress').hidden = false;
+      if (st >= SEUIL_LIVRAISON_OFFERTE) {
+        $('progress-text').textContent = 'La livraison à Abidjan vous est offerte.';
+        $('progress-bar').style.width = '100%';
+      } else {
+        $('progress-text').textContent = 'Plus que ' + fmt(SEUIL_LIVRAISON_OFFERTE - st) + ' pour la livraison offerte à Abidjan.';
+        $('progress-bar').style.width = Math.round(st / SEUIL_LIVRAISON_OFFERTE * 100) + '%';
+      }
+    } else {
+      $('progress').hidden = true;
+    }
+
+    $('s-sub').textContent = fmt(st);
+    $('s-zone-label').textContent = z.id === 'retrait' ? 'Retrait en boutique' : 'Livraison';
+    $('s-fee').textContent = f === null ? 'Sur devis' : (f === 0 ? (z.id === 'retrait' ? 'Gratuit' : 'Offerte') : fmt(f));
+    $('s-total').textContent = f === null ? fmt(st) + ' + envoi' : fmt(st + f);
+    majLien();
+  }
+  function majLien() {
+    $('send').href = waLien(message());
+    $('msg-fallback').value = message();
+  }
+
+  $('lines').addEventListener('click', function (e) {
+    var b = e.target.closest('button');
+    if (!b) return;
+    var i;
+    if (b.hasAttribute('data-moins')) { i = +b.getAttribute('data-moins'); etat.panier[i].qty--; if (etat.panier[i].qty < 1) etat.panier.splice(i, 1); }
+    else if (b.hasAttribute('data-plus')) { i = +b.getAttribute('data-plus'); if (etat.panier[i].qty < 20) etat.panier[i].qty++; }
+    else if (b.hasAttribute('data-retirer')) { i = +b.getAttribute('data-retirer'); etat.panier.splice(i, 1); }
+    else return;
+    sauver();
+    rendrePanier();
+    if (etat.panier.length === 0) $('cart-browse').focus();
+  });
+  $('zones').addEventListener('change', function (e) {
+    if (e.target.name === 'zone') { etat.zone = e.target.value; sauver(); rendrePanier(); }
+  });
+  $('pays').addEventListener('change', function (e) {
+    if (e.target.name === 'paiement') { etat.paiement = e.target.value; sauver(); majLien(); }
+  });
+  [['c-nom', 'nom'], ['c-tel', 'tel'], ['c-adresse', 'adresse']].forEach(function (pair) {
+    var el = $(pair[0]);
+    el.value = etat[pair[1]];
+    el.addEventListener('input', function () {
+      etat[pair[1]] = el.value;
+      el.removeAttribute('aria-invalid');
+      $('c-error').textContent = '';
+      sauver();
+      majLien();
+    });
+  });
+  $('order-form').addEventListener('submit', function (e) { e.preventDefault(); });
+
+  function valider() {
+    var manquants = [];
+    var champs = [['c-nom', 'nom', 'votre nom'], ['c-tel', 'tel', 'votre numéro WhatsApp']];
+    if (zoneCourante().id !== 'retrait') champs.push(['c-adresse', 'adresse', 'votre commune et un point de repère']);
+    var premier = null;
+    champs.forEach(function (c) {
+      var ok = etat[c[1]].trim().length > 1;
+      $(c[0]).setAttribute('aria-invalid', ok ? 'false' : 'true');
+      if (!ok) { manquants.push(c[2]); if (!premier) premier = $(c[0]); }
+    });
+    if (manquants.length) {
+      $('c-error').textContent = 'Indiquez ' + manquants.join(', ') + ' pour que nous puissions vous livrer.';
+      if (premier) premier.focus();
+      return false;
+    }
+    $('c-error').textContent = '';
+    return true;
+  }
+  $('send').addEventListener('click', function (e) {
+    if (!valider()) { e.preventDefault(); return; }
+    majLien();
+  });
+  $('copy-msg').addEventListener('click', function () {
+    var texte = message();
+    var zone = $('msg-fallback');
+    function repli() {
+      zone.hidden = false;
+      zone.value = texte;
+      zone.focus();
+      zone.select();
+      $('copy-msg').textContent = 'Sélectionnez le texte ci-dessous et copiez-le';
+    }
+    try {
+      navigator.clipboard.writeText(texte).then(function () {
+        $('copy-msg').textContent = 'Message copié';
+        setTimeout(function () { $('copy-msg').textContent = 'Copier le message de commande'; }, 2500);
+      }, repli);
+    } catch (err) { repli(); }
+  });
+  $('copy-phone').addEventListener('click', function () {
+    var btn = this;
+    function repli() {
+      var r = document.createRange();
+      r.selectNodeContents($('phone'));
+      var s = window.getSelection();
+      s.removeAllRanges();
+      s.addRange(r);
+      btn.textContent = 'Numéro sélectionné';
+    }
+    try {
+      navigator.clipboard.writeText('+2250500103243').then(function () { btn.textContent = 'Numéro copié'; }, repli);
+    } catch (err) { repli(); }
+  });
+
+  function ouvrirPanier() {
+    rendrePanier();
+    ouvrir($('cart-overlay'), $('cart-close'), $('open-cart'));
+  }
+  $('open-cart').addEventListener('click', ouvrirPanier);
+  $('cart-browse').addEventListener('click', function () {
+    fermer();
+    var c = $('collection');
+    if (c) c.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  /* ---- Démarrage ---- */
+  rendreFiltres();
+  rendreGrille();
+  rendrePanier();
+})();
+</script>
+
+</body>
+</html>
